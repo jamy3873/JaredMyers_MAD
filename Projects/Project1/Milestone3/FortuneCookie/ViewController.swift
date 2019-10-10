@@ -7,11 +7,11 @@
 //
 
 // ONLINE CODE SOURCES
-//https://codewithchris.com/uipickerview-example/
-//https://www.youtube.com/watch?v=QozQ3RYlBSA
+// Picker View - https://codewithchris.com/uipickerview-example/
+// Audio Effects - https://www.youtube.com/watch?v=QozQ3RYlBSA
 //
-//Fortunes Source:
-//https://joshmadison.com/2008/04/20/fortune-cookie-fortunes/
+// Fortunes Source:
+// https://joshmadison.com/2008/04/20/fortune-cookie-fortunes/
 
 
 import UIKit
