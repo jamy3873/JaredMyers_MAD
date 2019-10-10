@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FortuneCookie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fortune" translatesAutoresizingMaskIntoConstraints="NO" id="4Ei-x5-GcP">
+                                <rect key="frame" x="0.0" y="40" width="320" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hUM-rr-Dxd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWn-ya-V1E">
+                                <rect key="frame" x="21" y="144.5" width="278" height="279.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cpl-8i-PwA"/>
+                                    <constraint firstAttribute="width" constant="200" id="hWe-GT-czX"/>
+                                </constraints>
+                                <state key="normal" image="Cookie"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cpl-8i-PwA"/>
+                                        <exclude reference="hWe-GT-czX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cpl-8i-PwA"/>
+                                        <include reference="hWe-GT-czX"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="generateFortune:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U35-Mt-7ni"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONP-dG-Fyl">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Share" id="1un-eC-v4T">
+                                        <connections>
+                                            <action selector="shareFortune:" destination="BYZ-38-t0r" id="bhE-Yf-pzZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9fK-R3-Yl4"/>
+                                    <barButtonItem title="Show Options" id="mI3-Rc-etQ">
+                                        <connections>
+                                            <action selector="showOptions:" destination="BYZ-38-t0r" id="t0j-GL-Wxw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fortune goes here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yi5-qh-iZg">
+                                <rect key="frame" x="97" y="64" width="126" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="9o2-Os-Nek"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBQ-tl-nyw">
+                                <rect key="frame" x="0.0" y="404" width="320" height="120"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1K6-os-E9b">
+                                        <rect key="frame" x="-47" y="0.0" width="414" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="g8e-sp-Xsn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucky Number: #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug7-1j-ZYU">
+                                <rect key="frame" x="94" y="119.5" width="132" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.043112326874136818" green="0.91915847081218272" blue="0.32610041849331456" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uWn-ya-V1E" firstAttribute="bottom" secondItem="ONP-dG-Fyl" secondAttribute="centerY" id="88s-Vh-CdB"/>
+                            <constraint firstItem="Ug7-1j-ZYU" firstAttribute="bottom" secondItem="4Ei-x5-GcP" secondAttribute="baseline" id="9YP-yn-93i"/>
+                            <constraint firstItem="YBQ-tl-nyw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CqZ-xw-pBG"/>
+                            <constraint firstItem="YBQ-tl-nyw" firstAttribute="width" secondItem="ONP-dG-Fyl" secondAttribute="width" id="DvY-An-28Y"/>
+                            <constraint firstItem="Yi5-qh-iZg" firstAttribute="centerY" secondItem="4Ei-x5-GcP" secondAttribute="centerY" id="LU5-s6-NaK"/>
+                            <constraint firstItem="4Ei-x5-GcP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LkR-x8-bKH"/>
+                            <constraint firstItem="ONP-dG-Fyl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mvo-Fx-g0r"/>
+                            <constraint firstItem="Yi5-qh-iZg" firstAttribute="width" relation="lessThanOrEqual" secondItem="4Ei-x5-GcP" secondAttribute="width" constant="-150" id="QQF-h6-mCZ"/>
+                            <constraint firstItem="4Ei-x5-GcP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tz5-pF-APo"/>
+                            <constraint firstItem="ONP-dG-Fyl" firstAttribute="top" secondItem="YBQ-tl-nyw" secondAttribute="bottom" id="VoA-Jg-GlN"/>
+                            <constraint firstItem="uWn-ya-V1E" firstAttribute="bottom" secondItem="ONP-dG-Fyl" secondAttribute="top" constant="10" id="Z0h-H7-Cli"/>
+                            <constraint firstItem="Yi5-qh-iZg" firstAttribute="width" relation="lessThanOrEqual" secondItem="4Ei-x5-GcP" secondAttribute="width" constant="-70" id="bnw-4E-oO7"/>
+                            <constraint firstItem="Ug7-1j-ZYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cEQ-Wa-cAW"/>
+                            <constraint firstItem="4Ei-x5-GcP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="coY-U4-VUC"/>
+                            <constraint firstItem="Ug7-1j-ZYU" firstAttribute="top" secondItem="4Ei-x5-GcP" secondAttribute="top" id="d6X-bS-DOQ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="ONP-dG-Fyl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ejl-6B-Zn9"/>
+                            <constraint firstItem="ONP-dG-Fyl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hnG-3s-3nW"/>
+                            <constraint firstItem="uWn-ya-V1E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kdT-Du-MF5"/>
+                            <constraint firstItem="ONP-dG-Fyl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pzc-KG-sDB"/>
+                            <constraint firstItem="ONP-dG-Fyl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="r73-lL-BeU"/>
+                            <constraint firstItem="uWn-ya-V1E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wf1-2l-46d"/>
+                            <constraint firstItem="YBQ-tl-nyw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x9s-Ng-iZd"/>
+                            <constraint firstItem="Yi5-qh-iZg" firstAttribute="centerX" secondItem="4Ei-x5-GcP" secondAttribute="centerX" id="xgQ-hr-Q6w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QQF-h6-mCZ"/>
+                                <exclude reference="88s-Vh-CdB"/>
+                                <exclude reference="Z0h-H7-Cli"/>
+                                <exclude reference="wf1-2l-46d"/>
+                                <exclude reference="9YP-yn-93i"/>
+                                <exclude reference="d6X-bS-DOQ"/>
+                                <exclude reference="DvY-An-28Y"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="QQF-h6-mCZ"/>
+                                <exclude reference="bnw-4E-oO7"/>
+                                <include reference="Z0h-H7-Cli"/>
+                                <exclude reference="wf1-2l-46d"/>
+                                <include reference="d6X-bS-DOQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="88s-Vh-CdB"/>
+                                <exclude reference="wf1-2l-46d"/>
+                                <include reference="d6X-bS-DOQ"/>
+                                <exclude reference="CqZ-xw-pBG"/>
+                                <include reference="DvY-An-28Y"/>
+                                <exclude reference="hnG-3s-3nW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="wf1-2l-46d"/>
+                                <include reference="9YP-yn-93i"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cookieButton" destination="uWn-ya-V1E" id="Mbt-0u-eek"/>
+                        <outlet property="fortuneLabel" destination="Yi5-qh-iZg" id="XsS-3d-FbB"/>
+                        <outlet property="luckyNumber" destination="Ug7-1j-ZYU" id="i3g-0l-BQt"/>
+                        <outlet property="optionsButton" destination="mI3-Rc-etQ" id="dHZ-hu-Rqy"/>
+                        <outlet property="picker" destination="1K6-os-E9b" id="JPI-8t-njm"/>
+                        <outlet property="pickerView" destination="YBQ-tl-nyw" id="xCc-tx-gDd"/>
+                        <outlet property="shareButton" destination="1un-eC-v4T" id="tCa-mE-YkZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cookie" width="278" height="279.66665649414062"/>
+        <image name="Fortune" width="598" height="276.5"/>
+    </resources>
+</document>
