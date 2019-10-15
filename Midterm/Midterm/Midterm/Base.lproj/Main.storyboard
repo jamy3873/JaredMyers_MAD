@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Midterm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odc-Rc-Pr2">
+                                <rect key="frame" x="147.5" y="44" width="119" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commute Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoD-ye-TvQ">
+                                <rect key="frame" x="20" y="107.5" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show monthly commute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUR-d6-ivc">
+                                <rect key="frame" x="20" y="156" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gas in tank: # gals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-kt-Bcv">
+                                <rect key="frame" x="20" y="210.5" width="140.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gki-Wc-iUf">
+                                <rect key="frame" x="20" y="265" width="374" height="29"/>
+                                <segments>
+                                    <segment title="Car"/>
+                                    <segment title="Bus"/>
+                                    <segment title="Bike"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeVehicleType:" destination="BYZ-38-t0r" eventType="valueChanged" id="BtV-Zs-Rwm"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UyY-0X-J2v">
+                                <rect key="frame" x="276" y="103" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="tXW-ly-rEm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d7s-Aj-OKW">
+                                <rect key="frame" x="276" y="151" width="51" height="31"/>
+                                <connections>
+                                    <action selector="showMonthly:" destination="BYZ-38-t0r" eventType="valueChanged" id="xqk-qg-Z3h"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="pRf-Nl-Hfr">
+                                <rect key="frame" x="274" y="206" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="llE-Cc-Y0Z"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeTankGallons:" destination="BYZ-38-t0r" eventType="valueChanged" id="ibe-w4-MGp"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgf-r2-tT9">
+                                <rect key="frame" x="173.5" y="316" width="67" height="30"/>
+                                <state key="normal" title="Commute"/>
+                                <connections>
+                                    <action selector="commuteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5w5-hT-QmC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total commute time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzf-hG-nyR">
+                                <rect key="frame" x="20" y="378" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gas to purchase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izx-Zr-1jd">
+                                <rect key="frame" x="20" y="424" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjg-VK-VUe">
+                                <rect key="frame" x="276" y="378" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 gallons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPr-FB-UyC">
+                                <rect key="frame" x="276" y="424" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Gky-mF-R7s">
+                                <rect key="frame" x="94.5" y="473" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="1JR-e6-z2W"/>
+                                    <constraint firstAttribute="width" constant="225" id="Xha-gs-cUJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zjg-VK-VUe" firstAttribute="top" secondItem="bgf-r2-tT9" secondAttribute="bottom" constant="32" id="763-bA-Li1"/>
+                            <constraint firstItem="Zaa-kt-Bcv" firstAttribute="centerY" secondItem="pRf-Nl-Hfr" secondAttribute="centerY" id="7ZG-Si-wv6"/>
+                            <constraint firstItem="zoD-ye-TvQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Of-AR-EZq"/>
+                            <constraint firstItem="zjg-VK-VUe" firstAttribute="centerY" secondItem="Mzf-hG-nyR" secondAttribute="centerY" id="8cg-DD-rku"/>
+                            <constraint firstItem="Gky-mF-R7s" firstAttribute="top" secondItem="SPr-FB-UyC" secondAttribute="bottom" constant="28" id="96W-Gj-yUC"/>
+                            <constraint firstItem="Zaa-kt-Bcv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A6R-VA-QiL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SPr-FB-UyC" secondAttribute="trailing" constant="20" id="BNs-fO-YGB"/>
+                            <constraint firstItem="pRf-Nl-Hfr" firstAttribute="top" secondItem="d7s-Aj-OKW" secondAttribute="bottom" constant="24" id="DRh-xv-3s8"/>
+                            <constraint firstItem="d7s-Aj-OKW" firstAttribute="leading" secondItem="UyY-0X-J2v" secondAttribute="leading" id="GKA-hj-q5T"/>
+                            <constraint firstItem="d7s-Aj-OKW" firstAttribute="top" secondItem="UyY-0X-J2v" secondAttribute="bottom" constant="18" id="GTI-Fn-f0w"/>
+                            <constraint firstItem="bgf-r2-tT9" firstAttribute="top" secondItem="gki-Wc-iUf" secondAttribute="bottom" constant="23" id="H8c-ru-mIa"/>
+                            <constraint firstItem="zjg-VK-VUe" firstAttribute="leading" secondItem="pRf-Nl-Hfr" secondAttribute="leading" id="Ilh-V8-Aq3"/>
+                            <constraint firstItem="gki-Wc-iUf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JNz-FG-yZX"/>
+                            <constraint firstItem="pRf-Nl-Hfr" firstAttribute="leading" secondItem="UyY-0X-J2v" secondAttribute="leading" id="NYp-EW-oV5"/>
+                            <constraint firstItem="BUR-d6-ivc" firstAttribute="centerY" secondItem="d7s-Aj-OKW" secondAttribute="centerY" id="THV-PD-4NB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UyY-0X-J2v" secondAttribute="trailing" constant="20" id="UPe-rJ-8ld"/>
+                            <constraint firstItem="Odc-Rc-Pr2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vz5-iF-VU7"/>
+                            <constraint firstItem="zoD-ye-TvQ" firstAttribute="centerY" secondItem="UyY-0X-J2v" secondAttribute="centerY" id="W2z-RM-JaN"/>
+                            <constraint firstItem="Odc-Rc-Pr2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WJb-Mg-4xM"/>
+                            <constraint firstItem="izx-Zr-1jd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xxc-76-fn8"/>
+                            <constraint firstItem="BUR-d6-ivc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YVv-Ao-G4Q"/>
+                            <constraint firstItem="bgf-r2-tT9" firstAttribute="centerX" secondItem="gki-Wc-iUf" secondAttribute="centerX" id="dEK-tC-yDs"/>
+                            <constraint firstItem="Mzf-hG-nyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fmb-Pf-Y5W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zjg-VK-VUe" secondAttribute="trailing" constant="20" id="oLB-Wt-Bgs"/>
+                            <constraint firstItem="Gky-mF-R7s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rEZ-Zz-1S7"/>
+                            <constraint firstItem="SPr-FB-UyC" firstAttribute="top" secondItem="zjg-VK-VUe" secondAttribute="bottom" constant="25" id="sUH-U7-amg"/>
+                            <constraint firstItem="gki-Wc-iUf" firstAttribute="top" secondItem="pRf-Nl-Hfr" secondAttribute="bottom" constant="29" id="tf8-8Z-aaF"/>
+                            <constraint firstItem="SPr-FB-UyC" firstAttribute="leading" secondItem="zjg-VK-VUe" secondAttribute="leading" id="v9F-UV-4Yt"/>
+                            <constraint firstItem="SPr-FB-UyC" firstAttribute="centerY" secondItem="izx-Zr-1jd" secondAttribute="centerY" id="viL-F9-Jtc"/>
+                            <constraint firstItem="gki-Wc-iUf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40" id="x7s-h7-7we"/>
+                            <constraint firstItem="UyY-0X-J2v" firstAttribute="top" secondItem="Odc-Rc-Pr2" secondAttribute="bottom" constant="25" id="xcS-r3-0eU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gallonSlider" destination="pRf-Nl-Hfr" id="HaX-ZO-lEi"/>
+                        <outlet property="milesInput" destination="UyY-0X-J2v" id="aFd-d0-msb"/>
+                        <outlet property="monthlySwitch" destination="d7s-Aj-OKW" id="2XV-nE-mXO"/>
+                        <outlet property="segControl" destination="gki-Wc-iUf" id="2YM-DD-zuc"/>
+                        <outlet property="tankGallonLabel" destination="Zaa-kt-Bcv" id="cug-DD-1zC"/>
+                        <outlet property="totalGasLabel" destination="SPr-FB-UyC" id="yS2-zm-7xF"/>
+                        <outlet property="totalTimeLabel" destination="zjg-VK-VUe" id="6VB-Ms-zga"/>
+                        <outlet property="vehicleImage" destination="Gky-mF-R7s" id="Bo9-0r-Ywj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car_icon" width="225" height="225"/>
+    </resources>
+</document>
