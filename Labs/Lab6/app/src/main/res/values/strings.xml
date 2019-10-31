@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Halloween_Lab6</string>
+    <string name="favorite_candy">Favorite Candy</string>
+    <string name="candy_question">What is your favorite type of candy?</string>
+    <string name="free_candy">Submit</string>
+    <string name="candyPNG">candyPNG</string>
+</resources>
