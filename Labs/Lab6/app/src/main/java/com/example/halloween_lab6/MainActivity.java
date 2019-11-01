@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView outputText;
+    EditText candyText;
     ImageView image;
 
     @Override
@@ -16,15 +18,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        candyText = findViewById(R.id.editText);
+        outputText = findViewById(R.id.textView);
+
         image = findViewById(R.id.imageView);
         image.setVisibility(View.INVISIBLE);
     }
 
     public void freeCandy(View view){
-        EditText candyText = findViewById(R.id.editText);
-        String candyString = candyText.getText().toString();
+        String candyString = "";
+        if (candyText != null){
+            candyString = candyText.getText().toString();
+        }
 
-        TextView outputText = findViewById(R.id.textView);
         outputText.setText(candyString + " are my favorite too!");
 
         image.setVisibility(View.VISIBLE);
