@@ -32,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         outputText.setText(candyString + " are my favorite too!");
+        outputText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
 
         image.setVisibility(View.VISIBLE);
+        image.setImageResource(R.drawable.candy);
     }
 }
