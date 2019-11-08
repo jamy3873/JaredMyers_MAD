@@ -9,10 +9,10 @@
     </style>
 
     <style name="MyTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <item name="android:colorPrimary">@color/colorPrimary</item>
-        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:colorAccent">@color/colorAccent</item>
-        <item name="android:background">@color/background</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
     </style>
-
 </resources>
