@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Lab 7</string>
     <string name="header">Movie Generator</string>
-    <string name="toggleOn">Old</string>
-    <string name="toggleOff">New</string>
+    <string name="length">Move Length:</string>
+    <string name="toggleOn">Old Movies</string>
+    <string name="toggleOff">New Movies</string>
     <string name="spinner1">Action</string>
     <string name="spinner2">Comedy</string>
     <string name="spinner3">Romance</string>
     <string name="radio1">Short</string>
-    <string name="radio2">Standard</string>
     <string name="radio3">Long</string>
     <string name="check1">PG</string>
     <string name="check2">PG-13</string>
