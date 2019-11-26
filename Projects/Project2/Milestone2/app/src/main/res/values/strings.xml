@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Milestone 2</string>
+    <string name="title_activity_character_sheet">CharacterSheet</string>
+    <string name="title_character_creation">Character Creation</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="tab_text_4">Tab 4</string>
+
+    <string name="name">Name</string>
+    <string name="charClass">Class</string>
+    <string name="enter_name">Character Name:</string>
+    <string name="enter_class">Character Class:</string>
+
+    <string-array name="character_classes">
+        <item>Barbarian</item>
+        <item>Rouge</item>
+        <item>Sorcerer</item>
+    </string-array>
+
+    <string name="save_button">Save</string>
+
+</resources>
