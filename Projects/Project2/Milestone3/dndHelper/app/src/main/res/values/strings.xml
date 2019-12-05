@@ -20,4 +20,11 @@
 
     <string name="save_button">Save</string>
 
+    <string name="class_name">Class Name Here</string>
+    <string name="alignment">Alignment:</string>
+    <string name="hit_die">Hit Die:</string>
+    <string name="ranks">Ranks Per Level:</string>
+    <string name="skills">Skill List:</string>
+    <string name="per_level"> + int</string>
+
 </resources>

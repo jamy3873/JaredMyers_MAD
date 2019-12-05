@@ -3,25 +3,17 @@ package com.example.milestone2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.example.milestone2.ui.main.Frag1;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         createCharacters();
+        CharProfile newCharP = null;
+
+        Intent intent = getIntent();
+        if(intent != null){
+//            newCharP = (CharProfile) intent.getSerializableExtra("newChar");
+//            Log.i("New Char",newCharP.characterName);
+        }
 
         listView = findViewById(R.id.list_view);
         ArrayList<String> names = initializeList();
