@@ -68,11 +68,11 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<String> initCharList() {
         ArrayList<String> names = new ArrayList<>();
-        names.add("Rouge");
+        names.add("Bard");
         names.add("Barbarian");
         names.add("Paladin");
+        names.add("Rouge");
         names.add("Sorcerer");
-        names.add("Bard");
         return names;
     }
 }

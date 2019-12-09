@@ -23,15 +23,5 @@
 
     <include layout="@layout/class_info_content"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:fabSize="auto"
-        app:srcCompat="@mipmap/d20_foreground" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -13,7 +13,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            app:title="@string/app_name"
+            app:title="@string/main_header"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
@@ -24,8 +24,18 @@
     <ListView
         android:id="@+id/character_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize" />
+        android:layout_height="514dp"
+        android:layout_marginTop="?attr/actionBarSize" >
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="155dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/dndlogo" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -34,8 +44,9 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:fabSize="auto"
-        app:srcCompat="@mipmap/d20_foreground" />
+        app:backgroundTint="#F44336"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/dndnd20" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
