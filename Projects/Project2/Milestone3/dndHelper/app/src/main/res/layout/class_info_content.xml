@@ -131,20 +131,16 @@
 
             <ListView
                 android:id="@+id/skillList"
-                style="@style/Widget.AppCompat.ListView"
+                style="@style/ListFont"
                 android:layout_width="0dp"
                 android:layout_height="270dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
+                android:background="#009688"
+
+                android:clickable="false"
                 android:isScrollContainer="false"
                 android:nestedScrollingEnabled="true"
                 android:scrollbars="none"
-                android:background="@color/design_default_color_primary"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView8">
 
             </ListView>

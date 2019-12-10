@@ -1,6 +1,7 @@
 package com.example.dndhelper;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -37,6 +38,10 @@ public class ClassInformation extends AppCompatActivity {
         ranks = findViewById(R.id.myRanks);
         skillList = findViewById(R.id.skillList);
         classImage = findViewById(R.id.imageView);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
         String className = intent.getStringExtra("SelectedClass");
