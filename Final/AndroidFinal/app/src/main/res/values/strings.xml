@@ -5,6 +5,7 @@
     <string name="find_button">Find Burrito</string>
     <string name="build_button">Build</string>
     <string name="description"></string>
+    <string name="image_content">Image</string>
 
     <string name="meat">Meat</string>
     <string name="veggie">Veggie</string>
