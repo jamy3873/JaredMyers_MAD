@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Burrito</string>
+    <string name="header">Burrito Builder</string>
+    <string name="text_hint">Your Name</string>
+    <string name="find_button">Find Burrito</string>
+    <string name="build_button">Build</string>
+    <string name="description"></string>
+
+    <string name="meat">Meat</string>
+    <string name="veggie">Veggie</string>
+    <string name="switch_text">Gluten-Free </string>
+
+    <string name="radio1">Burrito</string>
+    <string name="radio2">Taco</string>
+
+    <string-array name="spinner_values">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
+
+    <string name="title_activity_suggestion">Suggestion</string>
+    <string name="suggest">My Suggestion</string>
+</resources>
